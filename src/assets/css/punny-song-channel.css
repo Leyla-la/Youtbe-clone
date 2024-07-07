@@ -1,0 +1,215 @@
+.channel-thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 74px;
+}
+.channel-in4 {
+  padding: 20px 60px;
+  display: flex;
+}
+.channel-in4-text-small {
+  flex-wrap: wrap;
+  display: flex;
+}
+.channel-in4 img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  display: none;
+}
+.channel-in4-without-img {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-left: 18px;
+  align-items: center;
+}
+.channel-in4-without-img h5 {
+  font-size: 30px;
+}
+.channel-in4-without-img span {
+  margin-right: 8px;
+}
+.channel-in4-without-img span:first-child {
+  font-weight: 550;
+  color: #635e5e;
+}
+.channel-in4-without-img button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 18px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  display: none;
+}
+.channel-in4-without-img button:hover {
+  background-color: rgb(181, 176, 176);
+  transition: all 0.2s linear;
+}
+.channel-navbar {
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-left: 0;
+  padding: 0 5px;
+  font-size: 14px;
+  width: 100%;
+  background-color: white;
+  z-index: 99;
+  height: 62px;
+}
+
+.sticky {
+  position: fixed;
+  top: 62px;
+  list-style: none;
+  display: flex;
+  text-align: center;
+  margin-left: -121px;
+  padding: 0 5px;
+  font-size: 14px;
+  background-color: white;
+  z-index: 99;
+  box-shadow: 1px 1px 3px rgb(51, 50, 50);
+}
+
+.channel-navbar li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px;
+}
+
+.channel-navbar a {
+  text-decoration: none;
+  color: #635e5e;
+  position: relative;
+}
+.channel-navbar a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  border-radius: 2px;
+  background-color: rgb(122, 118, 118);
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.channel-navbar a:hover::after {
+  width: 50%;
+}
+.channel-navbar a.active::after {
+  width: 50%;
+}
+
+#channel-home {
+  padding: 40px 90px;
+  background-image: url(/src/assets/imgs/orthisbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+}
+.channel-home-bg-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+#channel-home p {
+  text-align: justify;
+  color: white;
+}
+
+#channel-home p:nth-child(1) {
+  border-right: 0.15em solid orange;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 115px;
+  margin-bottom: 0;
+  animation: type 2s steps(13, end), blink 0.5s step-end infinite alternate;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    border-right: 0.15em solid orange;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.channel-videos-header,
+.channel-playlists-header,
+#channel-channels span:first-child,
+#channel-about span:first-child {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 18px;
+}
+.channel-videos-header span:last-child,
+.channel-playlists-header span:last-child {
+  margin-left: 20px;
+  border-radius: 12px;
+  background-color: #dedcdc;
+  padding: 5px 10px;
+}
+.channel-videos-header span:last-child:hover,
+.channel-playlists-header span:last-child:hover {
+  background-color: #c7c4c4;
+}
+#channel-videos .container-fluid,
+#channel-playlists .container-fluid {
+  padding-top: 0;
+  margin-top: -28px;
+}
+#channel-channels span:last-child {
+  margin-left: 18px;
+  margin-top: -20px !important;
+}
+.channel-descr {
+  margin-left: 18px;
+  margin-top: 10px;
+}
+.channel-stats {
+  margin-left: 10px;
+}
+
+.channel-playlists-each {
+  position: relative;
+}
+
+.playlist-footer {
+  position: absolute;
+  top: 4%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 6px 8px;
+  font-size: 12px;
+  align-items: center;
+  height: 10%;
+}
+.space-when-sticky{
+   height: 150px;
+   display: none;
+}

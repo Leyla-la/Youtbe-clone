@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" type="image/png" href="/src/assets/imgs/newfavicon.png">
+    <link rel="stylesheet" href="/src/assets/fonts/typography.css">
+    <link rel="stylesheet" href="/src/assets/css/page.css">
+    <link rel="stylesheet" href="/src/assets/css/nav.css">
+    <link rel="stylesheet" href="/src/assets/css/sidebar.css">
+    <link rel="stylesheet" href="/src/assets/css/chip.css">
+
+    <link rel="stylesheet" href="/src/assets/css/responsive.css">
+    <title>Subscriptions</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="navigation-bar bg-white z-5">
+        <div class="container-fluid">
+            <div class="nav-mic-detail">
+                <div class="nav-mic-detail-inside">
+                    <div id="nav-mic-detail-close-icon-container">
+                        <i id="nav-mic-detail-close-icon" class="d-flex  fa-solid fa-x"></i>
+                    </div>
+                    <span>Listening...</span>
+                    <div class="big-mic-inside">
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap align-items-center justify-content-md-between p-1">
+                <div id="nav-lhs" class="col d-flex align-items-center col-md-auto">
+                    <div id="menu"
+                        class="d-flex justify-content-center align-items-center rounded-circle ytube-icon">
+    
+                        <svg style="height:24px; flex-shrink:0; pointer-events: none; display: block;" viewBox="0 0 24 24"
+                            preserveAspectRatio="xMidYMid meet" focusable="false">
+                            <g>
+                                <path d="M21,6H3V5h18V6z M21,11H3v1h18V11z M21,17H3v1h18V17z">
+                                </path>
+                            </g>
+                        </svg>
+    
+                    </div>
+    
+                    <a class="logo-lychee" href="index.html">
+                        <img id="lychee-logo" src="/src/assets/imgs//logfinale.png" width="120" class=" mt-3" alt="">
+                        <img class="img-fluid qr-code" src="/src/assets/imgs/qr code lychee.png" alt="">
+                    </a>
+                </div>
+                <div id="full-search-bar"
+                    class="col col-md-6 col-lg-5 d-none d-md-flex align-items-center justify-content-center">
+    
+                    <div id="back-arrow" style="margin-right: 5px;">
+                        <i class="ytube-icon fa-solid fa-arrow-left"></i>
+                    </div>
+    
+                    <div class="input-group flex-nowrap col-10" style="width: 90%;">
+                        <input type="text" id="search-input" class="form-control" placeholder="Search">
+                        <ul class="search-history">
+                            <li class="each-search-history">
+                                <svg style="height:24px; flex-shrink:0; pointer-events: none; display: block;"
+                                    viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
+                                    <g>
+                                        <path
+                                            d="M14.97,16.95L10,13.87V7h2v5.76l4.03,2.49L14.97,16.95z M22,12c0,5.51-4.49,10-10,10S2,17.51,2,12h1c0,4.96,4.04,9,9,9 s9-4.04,9-9s-4.04-9-9-9C8.81,3,5.92,4.64,4.28,7.38C4.17,7.56,4.06,7.75,3.97,7.94C3.96,7.96,3.95,7.98,3.94,8H8v1H1.96V3h1v4.74 C3,7.65,3.03,7.57,3.07,7.49C3.18,7.27,3.3,7.07,3.42,6.86C5.22,3.86,8.51,2,12,2C17.51,2,22,6.49,22,12z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div class="each-search-history-title-close">
+                                    <span>f8 the band</span>
+                                    <i class="fa-solid fa-x each-search-history-close-icon"></i>
+                                </div>
+    
+                            </li>
+    
+    
+                            <li class="each-search-history">
+                                <svg style="height:24px; flex-shrink:0; pointer-events: none; display: block;"
+                                    viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
+                                    <g>
+                                        <path
+                                            d="M14.97,16.95L10,13.87V7h2v5.76l4.03,2.49L14.97,16.95z M22,12c0,5.51-4.49,10-10,10S2,17.51,2,12h1c0,4.96,4.04,9,9,9 s9-4.04,9-9s-4.04-9-9-9C8.81,3,5.92,4.64,4.28,7.38C4.17,7.56,4.06,7.75,3.97,7.94C3.96,7.96,3.95,7.98,3.94,8H8v1H1.96V3h1v4.74 C3,7.65,3.03,7.57,3.07,7.49C3.18,7.27,3.3,7.07,3.42,6.86C5.22,3.86,8.51,2,12,2C17.51,2,22,6.49,22,12z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div class="each-search-history-title-close">
+                                    <span>only friends the series</span>
+                                    <i class="fa-solid fa-x each-search-history-close-icon"></i>
+                                </div>
+    
+                            </li>
+    
+                            <li class="each-search-history">
+                                <svg style="height:24px; flex-shrink:0; pointer-events: none; display: block;"
+                                    viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
+                                    <g>
+                                        <path
+                                            d="M14.97,16.95L10,13.87V7h2v5.76l4.03,2.49L14.97,16.95z M22,12c0,5.51-4.49,10-10,10S2,17.51,2,12h1c0,4.96,4.04,9,9,9 s9-4.04,9-9s-4.04-9-9-9C8.81,3,5.92,4.64,4.28,7.38C4.17,7.56,4.06,7.75,3.97,7.94C3.96,7.96,3.95,7.98,3.94,8H8v1H1.96V3h1v4.74 C3,7.65,3.03,7.57,3.07,7.49C3.18,7.27,3.3,7.07,3.42,6.86C5.22,3.86,8.51,2,12,2C17.51,2,22,6.49,22,12z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div class="each-search-history-title-close">
+                                    <span>keshi limbo</span>
+                                    <i class="fa-solid fa-x each-search-history-close-icon"></i>
+                                </div>
+    
+                            </li>
+    
+                            <li class="each-search-history">
+                                <svg style="height:24px; flex-shrink:0; pointer-events: none; display: block;"
+                                    viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
+                                    <g>
+                                        <path
+                                            d="M14.97,16.95L10,13.87V7h2v5.76l4.03,2.49L14.97,16.95z M22,12c0,5.51-4.49,10-10,10S2,17.51,2,12h1c0,4.96,4.04,9,9,9 s9-4.04,9-9s-4.04-9-9-9C8.81,3,5.92,4.64,4.28,7.38C4.17,7.56,4.06,7.75,3.97,7.94C3.96,7.96,3.95,7.98,3.94,8H8v1H1.96V3h1v4.74 C3,7.65,3.03,7.57,3.07,7.49C3.18,7.27,3.3,7.07,3.42,6.86C5.22,3.86,8.51,2,12,2C17.51,2,22,6.49,22,12z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div class="each-search-history-title-close">
+                                    <span>dandelions</span>
+                                    <i class="fa-solid fa-x each-search-history-close-icon"></i>
+                                </div>
+    
+                            </li>
+    
+                            <li class="each-search-history">
+                                <svg style="height:24px; flex-shrink:0; pointer-events: none; display: block;"
+                                    viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
+                                    <g>
+                                        <path
+                                            d="M14.97,16.95L10,13.87V7h2v5.76l4.03,2.49L14.97,16.95z M22,12c0,5.51-4.49,10-10,10S2,17.51,2,12h1c0,4.96,4.04,9,9,9 s9-4.04,9-9s-4.04-9-9-9C8.81,3,5.92,4.64,4.28,7.38C4.17,7.56,4.06,7.75,3.97,7.94C3.96,7.96,3.95,7.98,3.94,8H8v1H1.96V3h1v4.74 C3,7.65,3.03,7.57,3.07,7.49C3.18,7.27,3.3,7.07,3.42,6.86C5.22,3.86,8.51,2,12,2C17.51,2,22,6.49,22,12z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div class="each-search-history-title-close">
+                                    <span>how to get rich without do anything</span>
+                                    <i class="fa-solid fa-x each-search-history-close-icon"></i>
+                                </div>
+    
+                            </li>
+    
+                            <li class="each-search-history">
+                                <svg style="height:24px; flex-shrink:0; pointer-events: none; display: block;"
+                                    viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
+                                    <g>
+                                        <path
+                                            d="M14.97,16.95L10,13.87V7h2v5.76l4.03,2.49L14.97,16.95z M22,12c0,5.51-4.49,10-10,10S2,17.51,2,12h1c0,4.96,4.04,9,9,9 s9-4.04,9-9s-4.04-9-9-9C8.81,3,5.92,4.64,4.28,7.38C4.17,7.56,4.06,7.75,3.97,7.94C3.96,7.96,3.95,7.98,3.94,8H8v1H1.96V3h1v4.74 C3,7.65,3.03,7.57,3.07,7.49C3.18,7.27,3.3,7.07,3.42,6.86C5.22,3.86,8.51,2,12,2C17.51,2,22,6.49,22,12z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <div class="each-search-history-title-close">
+                                    <span>ดาวหางฮัลเลย์</span>
+                                    <i class="fa-solid fa-x each-search-history-close-icon"></i>
+                                </div>
+    
+                            </li>
+                        </ul>
+                        <button class=" input-group-text px-3">
+                            <svg style="height:24px; flex-shrink:0" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                                focusable="false">
+                                <g>
+                                    <path
+                                        d="M20.87,20.17l-5.59-5.59C16.35,13.35,17,11.75,17,10c0-3.87-3.13-7-7-7s-7,3.13-7,7s3.13,7,7,7c1.75,0,3.35-0.65,4.58-1.71 l5.59,5.59L20.87,20.17z M10,16c-3.31,0-6-2.69-6-6s2.69-6,6-6s6,2.69,6,6S13.31,16,10,16z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </button>
+    
+                    </div>
+    
+                    <!-- mic -->
+                    <div id="nav-mic-icon" style="background-color: #f0f0f0;" class="ytube-icon ms-2">
+                        <div>
+                            <svg style="height: 24px; flex-shrink:0; " viewBox="0 0 24 24"
+                                preserveAspectRatio="xMidYMid meet" focusable="false" class=">
+                                        <g class=" d-flex align-items-center justify-content-center yt-icon">
+                                <path
+                                    d="M12 3C10.34 3 9 4.37 9 6.07V11.93C9 13.63 10.34 15 12 15C13.66 15 15 13.63 15 11.93V6.07C15 4.37 13.66 3 12 3ZM18.5 12H17.5C17.5 15.03 15.03 17.5 12 17.5C8.97 17.5 6.5 15.03 6.5 12H5.5C5.5 15.24 7.89 17.93 11 18.41V21H13V18.41C16.11 17.93 18.5 15.24 18.5 12Z">
+                                </path>
+                                </g>
+                            </svg>
+    
+    
+    
+                        </div>
+                    </div>
+    
+    
+                </div>
+    
+                <ul id="nav-rhs" class="nav col-md-auto">
+    
+                    <li>
+                        <div id="mini-search-icon" class="ytube-icon d-md-none d-lg-none d-sm-flex icon-nav-rside px-2">
+                            <svg style="height:24px; flex-shrink:0" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                                focusable="false">
+                                <g>
+                                    <path
+                                        d="M20.87,20.17l-5.59-5.59C16.35,13.35,17,11.75,17,10c0-3.87-3.13-7-7-7s-7,3.13-7,7s3.13,7,7,7c1.75,0,3.35-0.65,4.58-1.71 l5.59,5.59L20.87,20.17z M10,16c-3.31,0-6-2.69-6-6s2.69-6,6-6s6,2.69,6,6S13.31,16,10,16z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                    </li>
+    
+                    <li>
+                        <div id="create" data-tool-tip="Create" class="ytube-icon icon-nav-rside px-2">
+                            <svg style="height:24px; flex-shrink:0" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                                focusable="false">
+                                <g>
+                                    <path
+                                        d="M14,13h-3v3H9v-3H6v-2h3V8h2v3h3V13z M17,6H3v12h14v-6.39l4,1.83V8.56l-4,1.83V6 M18,5v3.83L22,7v8l-4-1.83V19H2V5H18L18,5 z">
+                                    </path>
+                                </g>
+                            </svg>
+    
+                        </div>
+                        <ul class="nav-create-dropdown">
+                            <li>
+                                <i class="fa-brands fa-youtube"></i>
+                                <span>Upload video</span>
+                            </li>
+    
+                            <li>
+                                <i class="fa-regular fa-image"></i>
+                                <span>Project</span>
+                            </li>
+                        </ul>
+    
+                    </li>
+    
+    
+    
+                    <li>
+                        <div data-tool-tip="Notifications" id="notifs" class="ytube-icon icon-nav-rside px-2">
+                            <svg style="height:24px; flex-shrink:0" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                                focusable="false">
+                                <g>
+                                    <path
+                                        d="M10,20h4c0,1.1-0.9,2-2,2S10,21.1,10,20z M20,17.35V19H4v-1.65l2-1.88v-5.15c0-2.92,1.56-5.22,4-5.98V3.96 c0-1.42,1.49-2.5,2.99-1.76C13.64,2.52,14,3.23,14,3.96l0,0.39c2.44,0.75,4,3.06,4,5.98v5.15L20,17.35z M19,17.77l-2-1.88v-5.47 c0-2.47-1.19-4.36-3.13-5.1c-1.26-0.53-2.64-0.5-3.84,0.03C8.15,6.11,7,7.99,7,10.42v5.47l-2,1.88V18h14V17.77z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+    
+    
+                        <div class="notifs-detail">
+                            <div class="notifs-header">
+                                <span>Notifications</span>
+                                <i class="ytube-icon fa-solid fa-gear"></i>
+                            </div>
+                            <ul class="notifs-content">
+                                <li class="each-notif">
+                                    <img src="https://yt3.ggpht.com/_RIV9EvUkGWKxwLShysfajw_38KtMBXbZfcTnW-tBx9P8Q0X0kccnQGSlBcFeeAGwYBjLlL60A=s88-c-k-c0x00ffffff-no-rj"
+                                        alt="">
+                                    <div class="notifs-text-content">
+                                        <span class="notif-title">
+                                            Ôi không thật tuyệt vời bạn yêu ơi the bootleg boy vừa up lên một video cực mới,
+                                            vào check var ngay thôi nào
+                                        </span>
+                                        <span class="notif-time">
+                                            9 hours ago
+                                        </span>
+                                    </div>
+                                    <img src="https://i.ytimg.com/vi/AzV77KFsLn4/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIEEoSDAP&rs=AOn4CLCy3wRsfM7GB12xxo8cG0Lpu40ujA"
+                                        alt="">
+                                </li>
+    
+                                <li class="each-notif">
+                                    <img src="https://yt3.ggpht.com/BFHYPl1L26CQxcyfaL9YRMoZnBgESJ47hTnI1PN0bJZntDYKqAknjVp6tulw5qJgmDUB78K1Vw=s88-c-k-c0x00ffffff-no-rj"
+                                        alt="">
+                                    <div class="notifs-text-content">
+                                        <span class="notif-title">
+                                            Đừng code web nữa phim của otp chiếu rồi đây này, đi xem phim thôi...
+                                        </span>
+                                        <span class="notif-time">
+                                            1 min ago
+                                        </span>
+                                    </div>
+                                    <img src="https://i.ytimg.com/vi/rCE3mzQuylw/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDFjM0NHw39ZbwFaPfqARpzKf2GTg"
+                                        alt="">
+                                </li>
+    
+                                <li class="each-notif">
+                                    <img src="https://yt3.ggpht.com/5DCchy0ZJsZYvj5TtFkK8n9pGuc_ltI5u9Mr6jylaVvN-qpx5Vh6202DFaAax7xpACiRFhJ1fA=s88-c-k-c0x00ffffff-no-nd-rj"
+                                        alt="">
+                                    <div class="notifs-text-content">
+                                        <span class="notif-title">
+                                            Tate McRae have just posted an video on her youtube channel, bet you will like
+                                        </span>
+                                        <span class="notif-time">
+                                            100 hours ago
+                                        </span>
+                                    </div>
+                                    <img src="https://i.ytimg.com/vi/To4SWGZkEPk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBO9fexHI30uDBwzw2F43Gy6o-UsQ"
+                                        alt="">
+                                </li>
+    
+                                <li class="each-notif">
+                                    <img src="https://yt3.ggpht.com/gAXWZiWMDV1InUC5xIWlQkdldYh-wK2lSISeEdf3CHpOigltKLvmMAJHufAHqkOZz3fXJziqgsE=s88-c-k-c0x00ffffff-no-nd-rj"
+                                        alt="">
+                                    <div class="notifs-text-content">
+                                        <span class="notif-title">
+                                            Lâu rồi không thấy bạn ghé qua thăm kênh của chúng tớ, nhớ bạn nhiều nha
+                                        </span>
+                                        <span class="notif-time">
+                                            30 mins ago
+                                        </span>
+                                    </div>
+                                    <img src="https://i.ytimg.com/vi/PVO_7L9wyWo/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA53ghGy2bJH2xiRaH8C8BB5AkphQ"
+                                        alt="">
+                                </li>
+    
+                                <li class="each-notif">
+                                    <img src="https://yt3.ggpht.com/ytc/APkrFKYPdmkFk0-jHoUSu_amzGOPRcGxzvM8064YA6P0Wg=s68-c-k-c0x00ffffff-no-rj"
+                                        alt="">
+                                    <div class="notifs-text-content">
+                                        <span class="notif-title">
+                                            Reduce stress and possess a happy day by a ghost story which was told by Nguyen
+                                            Ngoc Ngan
+                                        </span>
+                                        <span class="notif-time">
+                                            3983 years ago
+                                        </span>
+                                    </div>
+                                    <img src="https://i.ytimg.com/vi/vHAhapyR8UY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAjQbzJacsmEaqu24k248PTgSZtew"
+                                        alt="">
+                                </li>
+    
+    
+    
+                                <li class="each-notif">
+                                    <img src="https://yt3.ggpht.com/ytc/APkrFKblnfNARvksew4yNFyvCIb5o2tHcZIL6iiXwTOAGg=s88-c-k-c0x00ffffff-no-rj"
+                                        alt="">
+                                    <div class="notifs-text-content">
+                                        <span class="notif-title">
+                                            Cậu mệt mỏi lắm rồi đúng không, quên chá nà, hãy để POPS kids đưa bạn trở về
+                                            tuổi thơ với những thước phim đáng yêu nhé
+                                        </span>
+                                        <span class="notif-time">
+                                            24 hours ago
+                                        </span>
+                                    </div>
+                                    <img src="https://i.ytimg.com/vi/S0JggED-l0s/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCHJCeDemm1q55i2nD3RgZYhbxECA"
+                                        alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+    
+                    <li>
+                        <div class=" icon-nav-rside px-2">
+                            <img src="https://yt3.ggpht.com/3ZZeDlcscaVmpb4k-XD013KtkNqTxPKWIBUIJ7l9o_gEqdQoqf-CT4RoCFUrKeiMaRojIzIDTQ=s88-c-k-c0x00ffffff-no-rj"
+                                id="my-avt" class="rounded-circle" width="34px" height="34px" alt="">
+    
+                            <div class="my-in4">
+                                <div class="my-in4-header">
+                                    <img src="https://yt3.ggpht.com/3ZZeDlcscaVmpb4k-XD013KtkNqTxPKWIBUIJ7l9o_gEqdQoqf-CT4RoCFUrKeiMaRojIzIDTQ=s88-c-k-c0x00ffffff-no-rj"
+                                        alt="">
+                                    <span>leyla <br> @leyla1505 <br> <a href="">Manage your Google Acount</a></span>
+                                </div>
+                                <hr>
+    
+                                <ul class="my-in-4-list nav nav-pills flex-column mb-auto">
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link text-dark">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span>Your channel</span>
+                                        </a>
+                                    </li>
+    
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link text-dark">
+                                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                            <div class="my-in4-li-synth">
+                                                <span>Switch account</span>
+                                                <i class="fa-solid fa-angle-right"></i>
+                                            </div>
+    
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link text-dark">
+                                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                            <span>Sign out</span>
+                                        </a>
+                                    </li>
+                                    <hr>
+    
+                                    <li class="nav-item">
+                                        <a href="" class="d-flex align-items-center nav-link text-dark">
+                                            <i class="fa-solid fa-moon"></i>
+                                            <div class="my-in4-li-synth">
+                                                <span>Appearance: Device theme</span>
+                                                <i class="fa-solid fa-angle-right"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+    
+                                    <li class="nav-item">
+                                        <a href="" class="d-flex align-items-center nav-link text-dark">
+                                            <i class="fa-solid fa-language"></i>
+                                            <div class="my-in4-li-synth">
+                                                <span>Language: English</span>
+                                                <i class="fa-solid fa-angle-right"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="d-flex align-items-center nav-link text-dark">
+                                            <i class="fa-solid fa-globe"></i>
+                                            <div class="my-in4-li-synth">
+                                                <span>Location: Vietnam</span>
+                                                <i class="fa-solid fa-angle-right"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+    
+                                    <li class="nav-item">
+                                        <a href="#" class="d-flex align-items-center nav-link text-dark">
+                                            <i class="fa-solid fa-keyboard"></i>
+                                            <span>Keyboard shortcuts</span>
+                                        </a>
+                                    </li>
+                                    <hr>
+    
+                                    <li class="nav-item ">
+                                        <a href="#" class="d-flex align-items-center nav-link text-dark">
+                                            <i class="fa-solid fa-gear"></i>
+                                            <span>Settings</span>
+                                        </a>
+                                    </li>
+                                    <hr>
+    
+                                    <li class="nav-item ">
+                                        <a href="#" class="d-flex align-items-center nav-link text-dark">
+                                            <i class="fa-solid fa-circle-info"></i>
+                                            <span>Help</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a href="#" class="d-flex align-items-center nav-link text-dark">
+                                            <i class="fa-solid fa-message"></i>
+                                            <span>Send feedback</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                        </div>
+    
+                    </li>
+                </ul>
+            </div>
+    
+    
+        </div>
+    
+    
+    </div>
+    <!-- end navbar -->
+    
+    
+    <!-- sidebar -->
+    <div class="sidebar">
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="/src/page/index.html" class="nav-link text-dark">
+                    <svg style="height:24px; flex-shrink:0" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                        focusable="false">
+                        <path d="m12 4.44 7 6.09V20h-4v-6H9v6H5v-9.47l7-6.09m0-1.32-8 6.96V21h6v-6h4v6h6V10.08l-8-6.96z">
+                        </path>
+                    </svg>
+                    <span>Home</span>
+                </a>
+            </li>
+    
+            <li class="nav-item">
+                <a href="/src/page/shorts.html" class="nav-link text-dark">
+                    <svg style="height:24px; flex-shrink:0" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                        focusable="false">
+                        <g height="24" viewBox="0 0 24 24" width="24">
+                            <path
+                                d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33c-.77-.32-1.2-.5-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86l-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z">
+                            </path>
+                        </g>
+                    </svg>
+                    <span>Shorts</span>
+                </a>
+            </li>
+            <li class="nav-item side-active">
+                <a href="/src/page/subscriptions.html" class="nav-link text-dark">
+                    <svg style="height:24px; flex-shrink:0" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                        focusable="false">
+                        <g>
+                            <path
+                                d="M10,18v-6l5,3L10,18z M17,3H7v1h10V3z M20,6H4v1h16V6z M22,9H2v12h20V9z M3,10h18v10H3V10z">
+                            </path>
+                        </g>
+                    </svg>
+                    <span>Subscriptions</span>
+                </a>
+            </li>
+            <hr>
+    
+            <li class="nav-item">
+                <a href="/src/page/history.html" class="d-flex align-items-center nav-link text-dark">
+                    <svg style="height:24px; flex-shrink:0; pointer-events: none; display: block;" viewBox="0 0 24 24"
+                        preserveAspectRatio="xMidYMid meet" focusable="false">
+                        <g>
+                            <path
+                                d="M14.97,16.95L10,13.87V7h2v5.76l4.03,2.49L14.97,16.95z M22,12c0,5.51-4.49,10-10,10S2,17.51,2,12h1c0,4.96,4.04,9,9,9 s9-4.04,9-9s-4.04-9-9-9C8.81,3,5.92,4.64,4.28,7.38C4.17,7.56,4.06,7.75,3.97,7.94C3.96,7.96,3.95,7.98,3.94,8H8v1H1.96V3h1v4.74 C3,7.65,3.03,7.57,3.07,7.49C3.18,7.27,3.3,7.07,3.42,6.86C5.22,3.86,8.51,2,12,2C17.51,2,22,6.49,22,12z">
+                            </path>
+                        </g>
+                    </svg>
+                    <span>History</span>
+                </a>
+            </li>
+    
+            <li class="nav-item">
+                <a href="/src/page/watch-later.html" class="d-flex align-items-center nav-link text-dark">
+                    <svg style="height:24px; flex-shrink:0; pointer-events: none; display: block;" viewBox="0 0 24 24"
+                        preserveAspectRatio="xMidYMid meet" focusable="false">
+                        <g>
+                            <path
+                                d="M14.97,16.95L10,13.87V7h2v5.76l4.03,2.49L14.97,16.95z M12,3c-4.96,0-9,4.04-9,9s4.04,9,9,9s9-4.04,9-9S16.96,3,12,3 M12,2c5.52,0,10,4.48,10,10s-4.48,10-10,10S2,17.52,2,12S6.48,2,12,2L12,2z">
+                            </path>
+                        </g>
+                    </svg>
+                    <span>Watch Later</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/src/page/liked-video.html" class="d-flex align-items-center nav-link text-dark">
+                    <svg style="height:24px; flex-shrink:0; pointer-events: none; display: block;" viewBox="0 0 24 24"
+                        preserveAspectRatio="xMidYMid meet" focusable="false">
+                        <g>
+                            <path
+                                d="M18.77,11h-4.23l1.52-4.94C16.38,5.03,15.54,4,14.38,4c-0.58,0-1.14,0.24-1.52,0.65L7,11H3v10h4h1h9.43 c1.06,0,1.98-0.67,2.19-1.61l1.34-6C21.23,12.15,20.18,11,18.77,11z M7,20H4v-8h3V20z M19.98,13.17l-1.34,6 C18.54,19.65,18.03,20,17.43,20H8v-8.61l5.6-6.06C13.79,5.12,14.08,5,14.38,5c0.26,0,0.5,0.11,0.63,0.3 c0.07,0.1,0.15,0.26,0.09,0.47l-1.52,4.94L13.18,12h1.35h4.23c0.41,0,0.8,0.17,1.03,0.46C19.92,12.61,20.05,12.86,19.98,13.17z">
+                            </path>
+                        </g>
+                    </svg>
+                    <span>Liked Videos</span>
+                </a>
+            </li>
+    
+            <li class="nav-item">
+                <a href="/src/page/cute-things.html" class="d-flex align-items-center nav-link text-dark">
+                    <svg height="24px" viewBox="0 0 24 24" width="24px" focusable="false"
+                        style="pointer-events: none; display: block; ">
+                        <path d="M22 7H2v1h20V7zm-9 5H2v-1h11v1zm0 4H2v-1h11v1zm2 3v-8l7 4-7 4z"></path>
+                    </svg>
+                    <span>cute things</span>
+                </a>
+            </li>
+            <hr>
+    
+            <li class="nav-item">
+                <div class="nav-link p-0 text-dark">
+                    <span>Subscriptions</span>
+                </div>
+            </li>
+    
+            <li class="nav-item ">
+                <a href="/src/page/subscriptions/kairo.html" class="d-flex align-items-center nav-link text-dark">
+                    <img class="sub-details"
+                        src="https://yt3.googleusercontent.com/w0zY2o-YLOStj8kMhz1wkTfU6NnJH5sodANOpPFDRv3teJtN8mlqkRiowkedc6xwlkq02SnM=s176-c-k-c0x00ffffff-no-rj"
+                        alt="">
+                    <span>KAIRO</span>
+                </a>
+            </li>
+    
+            <li class="nav-item ">
+                <a href="/src/page/subscriptions/keshi.html" class="d-flex align-items-center nav-link text-dark">
+                    <img class="sub-details" src="https://pbs.twimg.com/media/F62hq96aUAAxFU3?format=jpg&name=small" alt="">
+                    <span>keshi</span>
+                </a>
+            </li>
+    
+            <li class="nav-item ">
+                <a href="/src/page/subscriptions/niki.html" class="d-flex align-items-center nav-link text-dark">
+                    <img class="sub-details"
+                        src="https://yt3.googleusercontent.com/gU57ObmwaSJczV-USg3xNowTZk6PzaoF0AayIOIDGWxObWE6kx-AWN4rgfMKd8VNbkmmClRZNQ=s176-c-k-c0x00ffffff-no-rj"
+                        alt="">
+                    <span>NIKI</span>
+                </a>
+            </li>
+    
+            <li class="nav-item ">
+                <a href="/src/page/subscriptions/lynxniee.html" class="d-flex align-items-center nav-link text-dark">
+                    <img class="sub-details" src="https://pbs.twimg.com/media/F8TwKvTbcAA3MGF?format=jpg&name=small" alt="">
+                    <span>lynxniee</span>
+                </a>
+            </li>
+    
+            <li class="nav-item ">
+                <a href="/src/page/subscriptions/offscenefilms.html" class="d-flex align-items-center nav-link text-dark">
+                    <img class="sub-details"
+                        src="https://yt3.googleusercontent.com/ytc/APkrFKb1x01duyXWVutSsOO2zYIEy-HIVLzYc_gHe3zN=s176-c-k-c0x00ffffff-no-rj"
+                        alt="">
+                    <span>OffSceneFilms</span>
+                </a>
+            </li>
+    
+            <li class="nav-item ">
+                <a href="/src/page/subscriptions/thai-dinh.html" class="d-flex align-items-center nav-link text-dark">
+                    <img class="sub-details" src="https://pbs.twimg.com/media/F7vnTvTawAAjafw?format=jpg&name=large" alt="">
+                    <span>Thái Đinh</span>
+                </a>
+            </li>
+    
+            <li class="nav-item ">
+                <a href="/src/page/subscriptions/Wn.html" class="d-flex align-items-center nav-link text-dark">
+                    <img class="sub-details" src="https://pbs.twimg.com/media/F1KJ9DSaYAAwqv2?format=jpg&name=small" alt="">
+                    <span>W/n</span>
+                </a>
+            </li>
+    
+    
+            <li class="nav-item ">
+                <a href="#" class="d-flex align-items-center justify-content-center nav-link text-dark">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <span>Show more</span>
+                </a>
+            </li>
+    
+            <hr>
+            <li class="nav-item ">
+                <a href="/src/page/settings.html" class="d-flex align-items-center nav-link text-dark">
+                    <svg style="height:24px; flex-shrink:0; pointer-events: none; display: block;" viewBox="0 0 24 24"
+                        preserveAspectRatio="xMidYMid meet" focusable="false">
+                        <g>
+                            <path
+                                d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,8c-2.21,0-4,1.79-4,4s1.79,4,4,4s4-1.79,4-4 S14.21,8,12,8L12,8z M13.22,3l0.55,2.2l0.13,0.51l0.5,0.18c0.61,0.23,1.19,0.56,1.72,0.98l0.4,0.32l0.5-0.14l2.17-0.62l1.22,2.11 l-1.63,1.59l-0.37,0.36l0.08,0.51c0.05,0.32,0.08,0.64,0.08,0.98s-0.03,0.66-0.08,0.98l-0.08,0.51l0.37,0.36l1.63,1.59l-1.22,2.11 l-2.17-0.62l-0.5-0.14l-0.4,0.32c-0.53,0.43-1.11,0.76-1.72,0.98l-0.5,0.18l-0.13,0.51L13.22,21h-2.44l-0.55-2.2l-0.13-0.51 l-0.5-0.18C9,17.88,8.42,17.55,7.88,17.12l-0.4-0.32l-0.5,0.14l-2.17,0.62L3.6,15.44l1.63-1.59l0.37-0.36l-0.08-0.51 C5.47,12.66,5.44,12.33,5.44,12s0.03-0.66,0.08-0.98l0.08-0.51l-0.37-0.36L3.6,8.56l1.22-2.11l2.17,0.62l0.5,0.14l0.4-0.32 C8.42,6.45,9,6.12,9.61,5.9l0.5-0.18l0.13-0.51L10.78,3H13.22 M14,2h-4L9.26,4.96c-0.73,0.27-1.4,0.66-2,1.14L4.34,5.27l-2,3.46 l2.19,2.13C4.47,11.23,4.44,11.61,4.44,12s0.03,0.77,0.09,1.14l-2.19,2.13l2,3.46l2.92-0.83c0.6,0.48,1.27,0.87,2,1.14L10,22h4 l0.74-2.96c0.73-0.27,1.4-0.66,2-1.14l2.92,0.83l2-3.46l-2.19-2.13c0.06-0.37,0.09-0.75,0.09-1.14s-0.03-0.77-0.09-1.14l2.19-2.13 l-2-3.46L16.74,6.1c-0.6-0.48-1.27-0.87-2-1.14L14,2L14,2z">
+                            </path>
+                        </g>
+                    </svg>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a href="/src/page/report-history.html" class="d-flex align-items-center nav-link text-dark">
+                    <svg style="height:24px; flex-shrink:0; pointer-events: none; display: block;" viewBox="0 0 24 24"
+                        preserveAspectRatio="xMidYMid meet" focusable="false">
+                        <g>
+                            <path
+                                d="M13.18,4l0.24,1.2L13.58,6h0.82H19v7h-5.18l-0.24-1.2L13.42,11H12.6H6V4H13.18 M14,3H5v18h1v-9h6.6l0.4,2h7V5h-5.6L14,3 L14,3z">
+                            </path>
+                        </g>
+                    </svg>
+                    <span>Report history</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a href="https://support.google.com/youtube/?hl=vi#topic=9257498"
+                    class="d-flex align-items-center nav-link text-dark">
+                    <svg style="height:24px; flex-shrink:0; pointer-events: none; display: block;" viewBox="0 0 24 24"
+                        preserveAspectRatio="xMidYMid meet" focusable="false">
+                        <g>
+                            <path
+                                d="M15.36,9.96c0,1.09-0.67,1.67-1.31,2.24c-0.53,0.47-1.03,0.9-1.16,1.6L12.85,14h-1.75l0.03-0.28 c0.14-1.17,0.8-1.76,1.47-2.27c0.52-0.4,1.01-0.77,1.01-1.49c0-0.51-0.23-0.97-0.63-1.29c-0.4-0.31-0.92-0.42-1.42-0.29 c-0.59,0.15-1.05,0.67-1.19,1.34L10.32,10H8.57l0.06-0.42c0.2-1.4,1.15-2.53,2.42-2.87c1.05-0.29,2.14-0.08,2.98,0.57 C14.88,7.92,15.36,8.9,15.36,9.96z M12,18c0.55,0,1-0.45,1-1s-0.45-1-1-1s-1,0.45-1,1S11.45,18,12,18z M12,3c-4.96,0-9,4.04-9,9 s4.04,9,9,9s9-4.04,9-9S16.96,3,12,3 M12,2c5.52,0,10,4.48,10,10s-4.48,10-10,10S2,17.52,2,12S6.48,2,12,2L12,2z">
+                            </path>
+                        </g>
+                    </svg>
+                    <span>Help</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a href="https://www.youtube.com/playlist?list=PL9hW1uS6HUfutYczOwkTzDI5iTucF4gmh"
+                    class="d-flex align-items-center nav-link text-dark">
+                    <svg style="height:24px; flex-shrink:0; pointer-events: none; display: block;" viewBox="0 0 24 24"
+                        preserveAspectRatio="xMidYMid meet" focusable="false">
+                        <g>
+                            <path
+                                d="M13,14h-2v-2h2V14z M13,5h-2v6h2V5z M19,3H5v16.59l3.29-3.29L8.59,16H9h10V3 M20,2v15H9l-5,5V2H20L20,2z">
+                            </path>
+                        </g>
+                    </svg>
+                    <span>Send feedback</span>
+                </a>
+            </li>
+            <hr>
+        </ul>
+    
+        <ul class="nav nav-footer mb-3">
+            <li class="nav-item">
+                <a href="https://about.youtube/" class="nav-link text-dark">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://blog.youtube/" class="nav-link text-dark">Press</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.youtube.com/howyoutubeworks/policies/copyright/"
+                    class="nav-link text-dark">Copyright</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.youtube.com/t/contact_us/" class="nav-link text-dark">Contact us</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.youtube.com/creators/" class="nav-link text-dark">Creators</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.youtube.com/ads/" class="nav-link text-dark">Advertise</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://developers.google.com/youtube" class="nav-link text-dark">Developers</a>
+            </li>
+        </ul>
+    
+        <ul class="nav nav-footer mb-3">
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="https://www.youtube.com/t/terms">Terms</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="https://www.youtube.com/t/terms">Privacy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="https://www.youtube.com/t/terms">Policy & safety</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark"
+                    href="https://www.youtube.com/howyoutubeworks/?utm_campaign=ytgen&utm_source=ythp&utm_medium=LeftNav&utm_content=txt&u=https%3A%2F%2Fwww.youtube.com%2Fhowyoutubeworks%3Futm_source%3Dythp%26utm_medium%3DLeftNav%26utm_campaign%3Dytgen">How
+                    I works</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="https://www.youtube.com/new">Test new features</a>
+            </li>
+        </ul>
+    
+        <ul class="nav nav-footer mb-3">
+            <li class="nav-item">
+                <a class="nav-link fw-light text-dark" href="#">© 2023 Google LLC</a>
+            </li>
+        </ul>
+    </div>
+    <!-- end sidebar -->
+
+    <div class="page-content">
+        <!-- videos -->
+        <div class="container-fluid p-3 py-3">
+            <div class="row" style="margin-top: 60px">
+                <span style="font-weight: bold; font-size: 20px; margin: 0 0 10px 2px;">Latest</span>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href=""
+                        class="card card-video border-0 bg-transparent mb-4">
+                        <img src="https://i.ytimg.com/vi/l0F9oC2olSY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDFeBthbkUikf3pfCYBx4Jo0Kg54Q"
+                            class="thumbnail img-fluid" alt="">
+                        <div class="card-video-details d-flex mt-2">
+                            <div class="me-2">
+                                <img src="https://yt3.ggpht.com/nTyXbANWr6JZ9pDgPyrtvuYTIpmJDJoqwmOuwZ4ledOx3RgX3h38_nS-LhnCWgsbOwy5bwhYrBA=s68-c-k-c0x00ffffff-no-rj"
+                                    class="avt-channels rounded-circle" alt="">
+                            </div>
+                            <div>
+                                <h4>Until I Found You - Stephen Sanchez Visualized Lyrics 🍾</h4>
+                                <div>Dida</div>
+                                <div>610 views • 16 hours ago</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="" class="card card-video border-0 bg-transparent mb-4">
+                        <img src="https://i.ytimg.com/vi/LRI4gK-FwaI/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB1AaAAuADigIMCAAQARhOIGUoZTAP&rs=AOn4CLACqjbgtax_rjPoI3-Qu0n6ZJcDqA" class="thumbnail img-fluid" alt="">
+                        <div class="card-video-details d-flex mt-2">
+                            <div class="me-2">
+                                <img src="https://yt3.ggpht.com/q2QGcS69f9MXvGXe2228dQM6Jm-Ralpo5W6S6tgeX_RnWrmhj1JrQ_Fa7KYxwFC-uzEadhlj=s68-c-k-c0x00ffffff-no-rj" class="avt-channels rounded-circle" alt="">
+                            </div>
+                            <div>
+                                <h4>[Lyrics+Vietsub] slower - Tate McRae</h4>
+                                <div>Tate McRae</div>
+                                <div>533 views • 2 years ago</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="" class="card card-video border-0 bg-transparent mb-4">
+                        <img src="https://i.ytimg.com/vi/poTo2HJ58KM/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAV-D5dqCNqt2tcTtT7IGbEX02voA" class="thumbnail img-fluid" alt="">
+                        <div class="card-video-details d-flex mt-2">
+                            <div class="me-2">
+                                <img src="https://yt3.ggpht.com/cAjD0eTvhwkGd3BpL3_1U5-2yoHaZrdUKqvAGuPSSsHPoflzGydjXtEjTZ8XhN8r1rYU-EnX=s68-c-k-c0x00ffffff-no-rj" class="avt-channels rounded-circle" alt="">
+                            </div>
+                            <div>
+                                <h4>The Chainsmokers feat.新田真剣佑「Closer (Tokyo Remix)」(Full Video)</h4>
+                                <div>Autas</div>
+                                <div>737K views • 2 years ago</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="" class="card card-video border-0 bg-transparent mb-4">
+                        <img src="https://i.ytimg.com/vi/pVi9W3OThVw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCiPE7XPjC8iZAn4D-PdQVZbHTzFg" class="thumbnail img-fluid" alt="">
+                        <div class="card-video-details d-flex mt-2">
+                            <div class="me-2">
+                                <img src="https://yt3.ggpht.com/SBlz_swDwV28MPpDkN2L-x6ddyNFaQXehUOr3NzAjWkLfmPGPgVNiL6eHLT7klr4d_V_jzlmYw=s88-c-k-c0x00ffffff-no-nd-rj" class="avt-channels rounded-circle" alt="">
+                            </div>
+                            <div>
+                                <h4>Stephen Dawes - Teenage Dream (Lyric Video)</h4>
+                                <div>Stephen Dawes</div>
+                                <div>23M views • 1 year ago </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="" class="card card-video border-0 bg-transparent mb-4">
+                        <img src="https://i.ytimg.com/vi/2VhgPpTDuFg/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC2GG4ztTgviw7fj7lSSNqgNpcr_w" class="thumbnail img-fluid" alt="">
+                        <div class="card-video-details d-flex mt-2">
+                            <div class="me-2">
+                                <img src="https://i.ytimg.com/vi/DR7cuc6aaCM/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBzpkAzocv35x9vn-hHbiB6uucjbA" class="avt-channels rounded-circle" alt="">
+                            </div>
+                            <div>
+                                <h4>Zack Tabudlo - Pano (Official Terjemahan Bahasa Indonesia Lyric Video)</h4>
+                                <div>Zack Tabudlo</div>
+                                <div>3.3M views views • 10 months ago</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="" class="card card-video border-0 bg-transparent mb-4">
+                        <img src="https://i.ytimg.com/vi/WgTMeICssXY/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAwK_Eyo81Hg5N3RVCrcTOCWmvGwg" class="thumbnail img-fluid" alt="">
+                        <div class="card-video-details d-flex mt-2">
+                            <div class="me-2">
+                                <img src="https://yt3.ggpht.com/bhG7T_FzfLoxqmJwGobKF1B9u9FhIXiYA8JYRPPoHcOASht0psOD3LZHZ3HqPEICEn30FWkDfg=s88-c-k-c0x00ffffff-no-rj" class="avt-channels rounded-circle" alt="">
+                            </div>
+                            <div>
+                                <h4>Ruth B. - Dandelions (Lyrics)</h4>
+                                <div>7clouds</div>
+                                <div>229M views • 2 years ago</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="" class="card card-video border-0 bg-transparent mb-4">
+                        <img src="https://i.ytimg.com/vi/Y04uCqaECqY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDIvIYsSjnfX7j2b_05BvF08uiznQ" class="thumbnail img-fluid" alt="">
+                        <div class="card-video-details d-flex mt-2">
+                            <div class="me-2">
+                                <img src="https://yt3.ggpht.com/ytc/APkrFKaxEVkI1kKna05JhaMJUFDKl82yOEeNX-Of_5UD=s88-c-k-c0x00ffffff-no-rj" class="avt-channels rounded-circle" alt="">
+                            </div>
+                            <div>
+                                <h4>old songs but it's lofi remix</h4>
+                                <div>Lo-fi Music</div>
+                                <div>44M views • 3 years ago</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="" class="card card-video border-0 bg-transparent mb-4">
+                        <img src="https://i.ytimg.com/vi/h7cOOfpdEfk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBxb_Q8OIT2xQQTAjaDwICaqUJjww" class="thumbnail img-fluid" alt="">
+                        <div class="card-video-details d-flex mt-2">
+                            <div class="me-2">
+                                <img src="https://yt3.ggpht.com/SEJdPcd4ZM0AjXwycf8SVU9p630WQi7tGXCtJRJoxC-BH9wAewv5nUkoYflPBIOE73lIAD7j=s88-c-k-c0x00ffffff-no-nd-rj" class="avt-channels rounded-circle" alt="">
+                            </div>
+                            <div>
+                                <h4>KARIK - BẠN ĐỜI (FT. GDUCKY) | OFFICIAL MUSIC VIDEO</h4>
+                                <div>KARIK</div>
+                                <div>11M views • 11 days ago</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="" class="card card-video border-0 bg-transparent mb-4">
+                        <img src="https://i.ytimg.com/vi/iJFseWl8AlE/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAsOYOgeIWw5Ml0uRdpGX-WM2M6GA" class="thumbnail img-fluid" alt="">
+                        <div class="card-video-details d-flex mt-2">
+                            <div class="me-2">
+                                <img src="https://yt3.ggpht.com/gAXWZiWMDV1InUC5xIWlQkdldYh-wK2lSISeEdf3CHpOigltKLvmMAJHufAHqkOZz3fXJziqgsE=s88-c-k-c0x00ffffff-no-rj" class="avt-channels rounded-circle" alt="">
+                            </div>
+                            <div>
+                                <h4>bao tiền một mớ bình yên?</h4>
+                                <div>14 Casper</div>
+                                <div>8.8M views • 1 year ago</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="" class="card card-video border-0 bg-transparent mb-4">
+                        <img src="https://i.ytimg.com/vi/PVO_7L9wyWo/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA53ghGy2bJH2xiRaH8C8BB5AkphQ" class="thumbnail img-fluid" alt="">
+                        <div class="card-video-details d-flex mt-2">
+                            <div class="me-2">
+                                <img src="https://i.ytimg.com/vi/eKL3TceSxvk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBx00NPjWW4qORDf80vt2F83WcLVQ" class="avt-channels rounded-circle" alt="">
+                            </div>
+                            <div>
+                                <h4>'thu hoài' - Hoài Thanh & 14 Casper (Live Session tại Phố cổ)</h4>
+                                <div>14 Casper</div>
+                                <div>55K views • 1 year ago</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="" class="card card-video border-0 bg-transparent mb-4">
+                        <img src="https://i.ytimg.com/vi/afp6CrtPnJo/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBv6qlBRRgPSyWJzDCBMsOqA5UVyw" class="thumbnail img-fluid" alt="">
+                        <div class="card-video-details d-flex mt-2">
+                            <div class="me-2">
+                                <img src="https://i.ytimg.com/vi/IVgua4NjMxM/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFUoPjAP&rs=AOn4CLAkqjpYVSYRsRjEIzufPcKdG7x_3w" class="avt-channels rounded-circle" alt="">
+                            </div>
+                            <div>
+                                <h4>Lyrics || Không Cần (Cover) - the SHEEP</h4>
+                                <div>Jen Hoang</div>
+                                <div>17M views • 6 years ago</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="" class="card card-video border-0 bg-transparent mb-4">
+                        <img src="https://i.ytimg.com/vi/zdfyONI3oTg/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAztqSVZ1LnQROSOglWuZFVjMrpSA" class="thumbnail img-fluid" alt="">
+                        <div class="card-video-details d-flex mt-2">
+                            <div class="me-2">
+                                <img src="https://yt3.ggpht.com/vI3deTeiDUQjEEYguGiRMtUAZtMyMF_42CKAuwNtNTpU28ib2L_6qHh-xa1fW8WpdeEkAy7MqQ=s88-c-k-c0x00ffffff-no-rj" class="avt-channels rounded-circle" alt="">
+                            </div>
+                            <div>
+                                <h4>Everlast</h4>
+                                <div>Will Van De Crommert</div>
+                                <div>20K views • 4 months ago</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="" class="card card-video border-0 bg-transparent mb-4">
+                        <img src="https://i.ytimg.com/vi/U_ukHjPFyCQ/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCo53a51vJoxNPtdXAUE4m_pqfB3g" class="thumbnail img-fluid" alt="">
+                        <div class="card-video-details d-flex mt-2">
+                            <div class="me-2">
+                                <img src="https://yt3.ggpht.com/z8TPwceRY_5Q75UtmfAPQJc2mGnNSIeWSbhJCcn6Lmd3IFIcHpuEhUYbud31D_v0r_rzFRI1=s88-c-k-c0x00ffffff-no-rj" class="avt-channels rounded-circle" alt="">
+                            </div>
+                            <div>
+                                <h4>Dancing With The Devil</h4>
+                                <div>ISBANKY</div>
+                                <div>2M views • 1 year ago</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="" class="card card-video border-0 bg-transparent mb-4">
+                        <img src="https://i.ytimg.com/vi/aXz36cq08cU/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBSnwZWS_KD4u8haBTOvq1GzKm0RA" class="thumbnail img-fluid" alt="">
+                        <div class="card-video-details d-flex mt-2">
+                            <div class="me-2">
+                                <img src="https://yt3.ggpht.com/ytc/APkrFKaVK6uqFeDHXnTmxEMBM1jP9HRePn209iIgnAY2ow=s88-c-k-c0x00ffffff-no-rj" class="avt-channels rounded-circle" alt="">
+                            </div>
+                            <div>
+                                <h4>เอาเลยมั้ย (Let’s Try) Ost.Only Friends เพื่อนต้องห้าม - Khaotung Thanawat</h4>
+                                <div>GMMTV</div>
+                                <div>2.1M views • 2 months ago</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="" class="card card-video border-0 bg-transparent mb-4">
+                        <img src="https://i.ytimg.com/vi/FtxRx-iY8fQ/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBlTFViRZHzBSLymamRx4-zmztZsA" class="thumbnail img-fluid" alt="">
+                        <div class="card-video-details d-flex mt-2">
+                            <div class="me-2">
+                                <img src="https://yt3.ggpht.com/jTHk_-P9L2GWVM756OzxOud0FxRUqwrUEdB0TWcaFrJ_aehYakfTRvKVK8cQocAbaMst6A-j2TM=s88-c-k-c0x00ffffff-no-rj" class="avt-channels rounded-circle" alt="">
+                            </div>
+                            <div>
+                                <h4>เรา</h4>
+                                <div>Selina and Sirinya</div>
+                                <div>159K views • 3 years ago</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <a href="" class="card card-video border-0 bg-transparent mb-4">
+                        <img src="https://i.ytimg.com/vi/7t4qnH8tpd4/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIEooTzAP&rs=AOn4CLBJLcPRwXIvCRVC6wlGf73Jg5TWgw" class="thumbnail img-fluid" alt="">
+                        <div class="card-video-details d-flex mt-2">
+                            <div class="me-2">
+                                <img src="https://i.ytimg.com/vi/qIM56IoaL34/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDfDVrAwe3EtmZ6GCmLtKXNb9uk0g" class="avt-channels rounded-circle" alt="">
+                            </div>
+                            <div>
+                                <h4>Before You Exit - Silence (Official Audio)</h4>
+                                <div>Before You Exit</div>
+                                <div>10M views • 4 years ago</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- end videos -->
+        <div class="overlay">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="/src/assets/js/all-js-in-one.js"></script>
+</body>
+
+</html>

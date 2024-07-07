@@ -1,0 +1,99 @@
+h6 {
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.history-lhs {
+  list-style: none;
+}
+.history-lhs li {
+  position: relative;
+}
+
+.history-lhs a {
+  display: flex;
+  text-decoration: none;
+}
+.history-lhs video {
+  width: 248px;
+  height: 140px;
+  border-radius: 12px;
+  margin-right: 10px;
+}
+
+.history-vid-detail span {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: #606060;
+  font-size: 12px;
+}
+.history-vid-detail span:first-child {
+  color: #0f0f0f !important;
+  font-size: 14px !important;
+}
+
+.history-video-detail-main {
+  display: flex;
+  justify-content: space-between !important;
+}
+.history-video-detail-title {
+  width: 250px;
+}
+.history-video-detail-icon {
+  display: none;
+  flex-wrap: nowrap;
+}
+
+.history-management {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  font-size: 14px;
+  margin-left: 25px;
+  position: fixed;
+}
+.history-search {
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.history-search i {
+  position: absolute;
+  z-index: 1;
+  left: 165px;
+  top: 5px;
+}
+.history-search input {
+  border-bottom: 1px solid rgb(177, 172, 172);
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  position: relative;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.history-search input:focus-visible {
+  outline: none;
+}
+.history-management-options {
+  width: 220px;
+}
+.history-management-options div {
+  margin: 10px 0;
+  height: 30px;
+  line-height: 32px;
+  padding: 0 0 0 10px;
+}
+.history-management-options div:hover {
+  background-color: #f2f2f2;
+}
+.history-management-options i {
+  margin-right: 5px;
+  font-size: 16px;
+  color: #625e5e;
+}

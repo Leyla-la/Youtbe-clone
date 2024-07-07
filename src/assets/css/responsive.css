@@ -1,0 +1,288 @@
+@media (min-width: 200px) {
+  .channel-thumbnail-container,
+  .channel-in4,
+  .channel-navbar-container,
+  .channel-home-container {
+    margin-right: -11px !important;
+  }
+  .channel-videos-container,
+  .channel-playlists-container {
+    margin-right: -6px !important;
+  }
+
+}
+@media (max-width: 460px) {
+  .reactshort-container {
+    margin-left: -77px;
+    padding-top: 149px !important;
+  }
+  .reactshort-container span {
+    color: white;
+  }
+  .vidshort-container {
+    margin-left: -30px;
+  }
+  .report-history-inside-1 { 
+    margin-left: 0 !important;
+  }
+  .report-history-inside-1 img{
+    display: none;
+  }
+  .history-each-vid {
+    width: 382px !important;
+  }
+  .banner-buttons button {
+    padding: 4px 0;
+  }
+  .account-section-1-inside img {
+    width: 123px;
+    height: 114px;
+  }
+  .report-history .overlay {
+    height: 164vh !important;
+  }
+  #channel-home {
+    padding: 40px !important;
+  }
+  .short {
+    margin-right: -14px;
+  }
+  .page-content {
+    margin-left: 0 !important;
+  }
+  .sidebar {
+    width: 230px !important;
+  }
+}
+@media (max-width: 400px) {
+  .banner {
+    width: 92vw;
+    margin-left: -4px;
+}
+  .watch-later .banner {
+    width: 98vw !important;
+  }
+}
+@media (max-width: 360px) {
+  .banner {
+    width: 104vw;
+    margin-left: -4px;
+}
+  .watch-later-list {
+    margin-left: -10px;
+  }
+  #channel-channels span:last-child {
+    font-size: 14px;
+  }
+  .my-in4 {
+    margin-right: -39px;
+    top: 58px;
+  }
+  #nav-mic-detail-close-icon-container {
+    margin-left: 263px !important;
+  }
+  .nav-mic-detail-inside {
+    width: 318px !important;
+  }
+  .nav-mic-detail-inside .big-mic-inside {
+    margin-left: 119px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+    z-index: 1000;
+  }
+  .page-content {
+    margin-left: 5px;
+  }
+  .overlay {
+    left: 230px;
+    height: 107%;
+  }
+  .to-left {
+    margin-left: -2px;
+  }
+  .overlay-each-video {
+    margin-left: 247px !important;
+    height: 100% !important;
+    overflow: hidden;
+    width: calc(100% - 221px);
+    height: 652% !important;
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    top: -70px;
+    z-index: 999;
+    display: none;
+  }
+  .sticky {
+    margin-left: 4px !important;
+  }
+  #full-search-bar {
+    padding: 0 15px;
+  }
+  .leftside {
+    padding: 0 10px 0 20px !important;
+  }
+
+  .notifs-detail {
+    width: 80vw;
+    left: 50px;
+  }
+  .action {
+    display: none;
+  }
+  .nav-mic-detail-inside {
+    width: 358px;
+    height: 345px;
+  }
+  .nav-mic-detail-inside span {
+    margin-bottom: 135px;
+  }
+  #nav-mic-detail-close-icon-container {
+    margin-left: 302px;
+  }
+  .nav-mic-detail-inside .big-mic-inside {
+    margin-left: 140px;
+  }
+
+  .simple-hide {
+    display: none !important;
+    position: fixed;
+  }
+  .channel-thumbnail-container,
+  .channel-in4,
+  .channel-navbar-container,
+  .channel-home-container {
+    margin-left: -4px !important;
+  }
+  .channel-videos-container,
+  .channel-playlists-container {
+    margin-left: 6px !important;
+  }
+  #channel-home p:nth-child(2) {
+    display: none !important;
+  }
+  
+}
+
+@media (min-width: 1110px) {
+  .all-1-vid-content {
+    padding: 0 85px;
+  }
+  .rhside {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1110px) {
+  .rightside .chip-container {
+    margin-left: 20px !important;
+  }
+
+  .share {
+    display: none;
+  }
+
+  .download {
+    display: none;
+  }
+  .col-lg-4 {
+    width: 100%;
+  }
+  .col-lg-8 {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) {
+  .channel-navbar li {
+    margin: 0 18px !important;
+  }
+
+  .channel-in4 img,
+  .channel-in4-without-img button {
+    display: block !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1110px) {
+  .sidebar {
+    width: 100px;
+  }
+  .sidebar .nav-link {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+  }
+  .sidebar .nav-link svg {
+    width: 30px;
+  }
+  .sidebar .nav-link span {
+    font-size: 10px !important;
+  }
+  .page-content {
+    margin-left: 100px;
+  }
+
+  .sidebar .nav-footer {
+    display: none;
+  }
+  .banner {
+    height: auto;
+  }
+  .banner-tophalf {
+    display: flex;
+    align-items: center;
+  }
+  .col-lg-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .history-lhs {
+    padding-left: 0;
+  }
+  .logo-lychee {
+    margin-left: 20px;
+  }
+  #menu {
+    margin-left: 16px;
+  }
+  .overlay {
+    height: 101%;
+  }
+  .overlay-each-video {
+    margin-left: 112px !important;
+    height: 100% !important;
+    overflow: hidden;
+    width: calc(100% - 100px);
+    height: 643% !important;
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    top: -70px;
+    z-index: 998;
+    display: none;
+  }
+  .leftside {
+    padding: 0 20px 0 40px !important;
+  }
+  .sticky {
+    margin-left: -54px !important;
+  }
+}
+
+@media (max-width: 1030px) {
+  .history-management {
+    display: none;
+  }
+  .col-lg-8 {
+    width: 100% !important;
+    padding-left: 0;
+  }
+  .history-lhs {
+    padding-left: 5px;
+  }
+}

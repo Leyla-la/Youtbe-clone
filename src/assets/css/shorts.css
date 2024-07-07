@@ -1,0 +1,84 @@
+.shorts-container {
+  flex-direction: column;
+  width: 400px;
+  justify-content: center;
+
+  margin: auto;
+  border-radius: 12px;
+  padding-top: 70px;
+}
+
+.short {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.short video {
+  width: 355px;
+  height: 80vh;
+  object-fit: cover;
+  margin: 14px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.short-detail {
+  position: absolute;
+  top: 30px;
+  color: white;
+  margin-left: 5px;
+}
+
+.short-detail span {
+  margin-bottom: 0 !important;
+}
+
+.short-header {
+  margin-left: 44px;
+  margin-top: -10px !important;
+}
+
+.short-detail-owner-sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.short-owner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 4px;
+  margin-left: 8px;
+}
+
+.short i {
+  font-size: 22px;
+  background-color: #f2f2f2;
+  margin: 10px 0 10px 12px;
+}
+
+.short span {
+  font-size: 15px;
+  margin-bottom: 15px;
+  padding-left: 12px;
+  margin-top: -5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.reactshort-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 99;
+  padding: 88px 0 0 10px;
+}

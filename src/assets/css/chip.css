@@ -1,0 +1,50 @@
+.chip-container {
+  background-color: white;
+  padding: 10px 3px !important;
+  position: sticky;
+  top: 65px;
+  z-index: 3 !important;
+}
+.chip {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #f2f2f2;
+  white-space: nowrap;
+  margin-right: 5px;
+  border-radius: 12px;
+  color: black;
+  cursor: pointer;
+}
+
+.chip.active {
+  background: #0f0f0f !important;
+  color: white;
+}
+
+.chip:hover {
+  background-color: #dbd9d9;
+}
+
+.slick {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.slick-arrow {
+  background-color: rgba(252, 252, 252, 0.5);
+  height: 34px;
+  width: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin: 0 5px;
+  border: none;
+}
+.slick-arrow:hover {
+  border: 1px solid #ccc;
+}

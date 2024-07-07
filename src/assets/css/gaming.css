@@ -1,0 +1,26 @@
+.gaming-thumbnail {
+    position: relative;
+    top: 70px;
+    background-image: url('https: //i.ytimg.com/vi/eXAsmkIUfYA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCYpKEfOdRQ8Pw_IrWn7lRF-mFY5g');
+    background-size: cover;
+}
+
+.gaming-thumbnail-content {
+    display: flex;
+    flex-direction: column;
+    
+}
+.gaming-thumbnail-content button {
+    width: 120px;
+    border: none;
+    border-radius: 12px !important;
+    line-height: 30px;
+    background-color: black;
+    color: white;
+}
+.gaming-thumbnail-content button:hover {
+    background-color: rgb(88, 84, 84);
+}
+.gamming-content {
+    margin-top: 120px !important;
+}
